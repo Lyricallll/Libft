@@ -6,11 +6,11 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:48:48 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/05 14:20:15 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/05 14:21:41 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include <stdio.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
