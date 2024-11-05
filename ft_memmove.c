@@ -10,23 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stddef.h>
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n) 
 {
-	unsigned char	*dest_copy;
-	unsigned char	*src_copy;
-	unsigned char	*temp;
+	unsigned char *dest_copy = (unsigned char *)dest;
+	const unsigned char *src_copy = (const unsigned char *)src;
 
-	dest_copy = (unsigned char *) dest;
-	src_copy = (unsigned char *) src;
-	while (n > 0)
-	{
-		*temp = *src_copy;
-		temp++;
-		src_copy++;
-		n--;
+    if (dest_copy > src_copy && dest_copy < src_copy + n)
+    	{
+        	size_t i = n;
+		while (i > 0) 
+		{
+			i--;
+		dest_copy[i] = src_copy[i];
+		}
 	}
-	while () A FINIR VOIR SI CAT OU PAS 
-	return (dest);
+    else
+    {
+        size_t i = 0;
+        while (i < n) 
+	{
+            dest_copy[i] = src_copy[i];
+            i++;
+        }
+    }
+    return dest;
 }
