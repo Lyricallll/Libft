@@ -6,7 +6,16 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 08:59:56 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/06 07:20:40 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/06 16:49:28 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef LIBFT_H
+# define LIBFT_H
+
+#include <stdlib.h>
+#include <stdio.h>
+
+void	ft_bzero(void *s, size_t n);
+
+#endif
