@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strrchr(const char *str, int ch)
 {
 	int	i;
@@ -17,13 +19,13 @@ char	*ft_strrchr(const char *str, int ch)
 	i = 0;
 	while (str[i])
 		i++;
-	while (str[i] >= str[0])
+	while (i >= 0)
 	{
 		if (str[i] == (unsigned char) ch)
-			return ((char *) str);
+			return ((char *) &str[i]);
 		i--;
 	}
-	return (0);
+	return (NULL);
 }
 /*
 #include <stdio.h>

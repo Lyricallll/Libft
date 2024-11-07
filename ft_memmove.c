@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:35:37 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 08:09:56 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/07 16:30:54 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	const unsigned char		*src_copy;
 	size_t					i;
 
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	dest_copy = (unsigned char *)dest;
 	src_copy = (const unsigned char *)src;
-	if (dest_copy > src_copy && dest_copy < src_copy + n)
+	if (dest_copy > src_copy)
 	{
 		i = n;
-		while (i > 0)
-		{
-			i--;
+		while (i-- > 0)
 			dest_copy[i] = src_copy[i];
-		}
 	}
 	else
 	{

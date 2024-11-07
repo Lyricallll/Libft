@@ -6,11 +6,11 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:38:57 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/05 12:47:02 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/07 15:50:47 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *s)
+int	ft_strlen(const char *s)
 {
 	int	i;
 

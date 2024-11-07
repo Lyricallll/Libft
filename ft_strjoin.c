@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 07:10:29 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 08:08:38 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/07 15:51:26 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 
 	i = 0;
-	size_of_string_return = ft_strlen((char *)s1) + ft_strlen((char *)s2);
+	size_of_string_return = ft_strlen(s1) + ft_strlen(s2);
 	tab_return = malloc(size_of_string_return + 1);
 	if (!tab_return)
 		return (NULL);
