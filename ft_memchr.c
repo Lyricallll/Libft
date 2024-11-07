@@ -6,11 +6,11 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 08:26:43 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/06 09:12:09 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/07 08:09:11 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *ptr, int value, size_t num)
 {

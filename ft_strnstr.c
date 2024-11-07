@@ -6,13 +6,11 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 09:50:25 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/06 13:20:36 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/07 08:11:44 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <bsd/string.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 {
@@ -42,6 +40,7 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 	}
 	return (NULL);
 }
+/*
 int	main(void)
 {
 	const char	tab1[50] = "Hello le monde ou hello pas";
@@ -50,3 +49,4 @@ int	main(void)
 	printf("%s\n", ft_strnstr(tab1,tab2,1000));
 	printf("%s\n", strnstr(tab1,tab2,1000));
 }
+*/

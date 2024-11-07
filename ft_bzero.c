@@ -6,11 +6,11 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:31:01 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/06 16:31:28 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/07 08:08:54 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
