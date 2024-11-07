@@ -6,11 +6,11 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 13:00:25 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/06 13:31:13 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/07 09:48:08 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	sign;
 	int	result;

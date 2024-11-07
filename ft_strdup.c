@@ -6,21 +6,11 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 13:31:58 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 08:10:20 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/07 09:17:59 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strlen(char *src)
-{
-	int	count;
-
-	count = 0;
-	while (src[count])
-		count++;
-	return (count);
-}
 
 char	*ft_strdup(char *src)
 {

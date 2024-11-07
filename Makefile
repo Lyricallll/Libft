@@ -6,7 +6,7 @@
 #    By: agraille <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 08:03:50 by agraille          #+#    #+#              #
-#    Updated: 2024/11/07 08:19:55 by agraille         ###   ########.fr        #
+#    Updated: 2024/11/07 08:34:08 by agraille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ SRC = ./ft_isalpha.c\
 	./ft_atoi.c\
 	./ft_calloc.c\
 	./ft_strdup.c\
-	./ft_substr.c\	
+	./ft_substr.c\
 	./ft_strjoin.c
 
 
