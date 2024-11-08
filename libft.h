@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 08:59:56 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/08 10:40:29 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/08 15:30:12 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ char			*ft_strrchr(const char *str, int ch);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strdup(char *src);
 char			*ft_strchr(const char *s, int c);
+char			*ft_itoa(int n);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
 void			ft_bzero(void *s, size_t n);
