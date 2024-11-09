@@ -6,7 +6,7 @@
 #    By: agraille <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 08:03:50 by agraille          #+#    #+#              #
-#    Updated: 2024/11/08 23:02:32 by agraille         ###   ########.fr        #
+#    Updated: 2024/11/09 23:18:07 by agraille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,13 @@ SRC = ./ft_isalpha.c\
 	./ft_strjoin.c\
 	./ft_strtrim.c\
 	./ft_split.c\
-	./ft_itoa.c
+	./ft_itoa.c\
+	./ft_strmapi.c\
+	./ft_striteri.c\
+	./ft_putchar_fd.c\
+	./ft_putnbr_fd.c\
+	./ft_putstr_fd.c\
+	./ft_putendl_fd.c
 
 
 OBJ = $(SRC:.c=.o)
