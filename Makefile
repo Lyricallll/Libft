@@ -6,7 +6,7 @@
 #    By: agraille <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 08:03:50 by agraille          #+#    #+#              #
-#    Updated: 2024/11/09 23:18:07 by agraille         ###   ########.fr        #
+#    Updated: 2024/11/12 08:51:05 by agraille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,9 +46,12 @@ SRC = ./ft_isalpha.c\
 	./ft_putnbr_fd.c\
 	./ft_putstr_fd.c\
 	./ft_putendl_fd.c
-
+SRC_BONUS = ./ft_lstnew.c\
+			./ft_lstadd_front.c\
+			./ft_lstsize.c
 
 OBJ = $(SRC:.c=.o)
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
 NAME = libft.a
 
 all: $(NAME)
@@ -59,11 +62,13 @@ $(NAME): $(OBJ)
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -I . -c $< -o $@
 
+bonus :
+	$(MAKE) SRC="$(SRC) $(SRC_BONUS)"
 clean :
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(OBJ_BONUS)
 
 fclean :
-	rm -f $(NAME) $(OBJ)
+	rm -f $(NAME) $(OBJ) $(OBJ_BONUS)
 
 re : fclean all
 

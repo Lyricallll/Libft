@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 08:59:56 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/09 23:08:55 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 08:50:44 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@
 # include <stdio.h>
 # include <unistd.h>
 
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
 char			*ft_strnstr(const char *str1, const char *str2, size_t len);
@@ -40,6 +45,7 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
+void			ft_lstadd_front(t_list **lst, t_list *new);
 int				ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
 int				ft_isprint(int c);
 int				ft_isdigit(int c);
@@ -51,5 +57,7 @@ int				ft_isalpha(int c);
 int				ft_strlen(const char *s);
 int				ft_atoi(const char *str);
 int				ft_strncmp(char *s1, char *s2, unsigned int n);
+int				ft_lstsize(t_list *lst);
+t_list			*ft_lstnew(void *content);
 
 #endif
