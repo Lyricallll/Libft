@@ -6,11 +6,24 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:07 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/12 14:52:21 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 16:02:08 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static	void	ft_free_split(char **split)
+{
+	int	i;
+
+	i = 0;
+	while (split[i] != 0)
+	{
+		free(split[i]);
+		i++;
+	}
+	free(split);
+}
 
 static int	ft_check(const char *s, char c, int i)
 {
@@ -83,6 +96,8 @@ char	**ft_split(char const *s, char c)
 		if (word == 1 && !ft_check(s, c, i))
 		{
 			split[j] = ft_copy(i, s, c);
+			if (split[j - 1])
+				ft_free_split(split);
 			j++;
 			word = 0;
 		}
