@@ -6,13 +6,13 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:07 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/12 16:02:08 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 22:32:13 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	void	ft_free_split(char **split)
+static	char	**ft_free_split(char **split)
 {
 	int	i;
 
@@ -20,9 +20,11 @@ static	void	ft_free_split(char **split)
 	while (split[i] != 0)
 	{
 		free(split[i]);
+		split[i] = NULL;
 		i++;
 	}
 	free(split);
+	return (NULL);
 }
 
 static int	ft_check(const char *s, char c, int i)
@@ -67,11 +69,11 @@ static char	*ft_copy(int i, const char *s, char c)
 	end = i;
 	while (!ft_check(s, c, end) && s[end])
 		end++;
-	j = 0;
 	len = end - i;
 	copy = malloc(sizeof(char) * (len + 1));
 	if (copy == NULL)
 		return (NULL);
+	j = 0;
 	while (i < end)
 		copy[j++] = s[i++];
 	copy[j] = '\0';
@@ -85,26 +87,24 @@ char	**ft_split(char const *s, char c)
 	int		j;
 	char	**split;
 
-	i = 0;
+	i = -1;
 	word = 1;
 	j = 0;
 	split = malloc(sizeof(char *) * (ft_count_word(s, c) + 1));
-	if (split == NULL)
+	if (!split || !s)
 		return (NULL);
-	while (s[i])
+	while (s[++i])
 	{
 		if (word == 1 && !ft_check(s, c, i))
 		{
-			split[j] = ft_copy(i, s, c);
-			if (split[j - 1])
-				ft_free_split(split);
-			j++;
+			split[j++] = ft_copy(i, s, c);
+			if (split[j - 1] == NULL)
+				return (ft_free_split(split));
 			word = 0;
 		}
 		else if (word == 0 && ft_check(s, c, i))
 			word = 1;
-		i++;
 	}
-	split[j] = 0;
+	split[j] = NULL;
 	return (split);
 }
