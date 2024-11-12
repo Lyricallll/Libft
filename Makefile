@@ -6,7 +6,7 @@
 #    By: agraille <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 08:03:50 by agraille          #+#    #+#              #
-#    Updated: 2024/11/12 08:51:05 by agraille         ###   ########.fr        #
+#    Updated: 2024/11/12 10:11:57 by agraille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,11 @@ SRC = ./ft_isalpha.c\
 	./ft_putendl_fd.c
 SRC_BONUS = ./ft_lstnew.c\
 			./ft_lstadd_front.c\
-			./ft_lstsize.c
+			./ft_lstsize.c\
+			./ft_lstlast.c\
+			./ft_lstadd_back.c\
+			./ft_lstdelone.c\
+			./ft_lstclear.c
 
 OBJ = $(SRC:.c=.o)
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
