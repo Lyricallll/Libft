@@ -27,14 +27,3 @@ char	*ft_strrchr(const char *str, int ch)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	const char	s[100] = "allo l terre";
-	int	c = 97;
-
-	printf("%s\n",ft_strrchr(s,c));
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 07:10:29 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 15:51:26 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:53:26 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	tab_return[i] = '\0';
 	return (tab_return);
 }
-/*
-int	main(void)
-{
-	const char	tab1[100] = "salut les gars";
-	const char	tab2[100] = "salut les gars";
-
-	printf("%s\n",ft_strjoin(tab1,tab2));
-}
-*/

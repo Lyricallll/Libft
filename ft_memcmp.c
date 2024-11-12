@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 09:13:49 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 15:23:28 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:51:32 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	const	unsigned char	ptr1[50] = "hello le monde"; 
-	const	unsigned char	ptr2[50] = "hellb le monde";
-
-	printf("%d\n",memcmp(ptr1,ptr2,15));
-	printf("%d\n",ft_memcmp(ptr1,ptr2,15));
-
-}
-*/

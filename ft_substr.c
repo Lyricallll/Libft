@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 16:00:37 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 16:03:26 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:54:58 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new_string[i] = '\0';
 	return (new_string);
 }
-/*
-int	main(void)
-{
-	const char	tab[50] = "123456789";
-	char *tab2 = ft_substr(tab,5,4);
-
-	printf("%s\n",tab2);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:07:55 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 16:28:51 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:51:41 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*
-int	main(void)
-{
-	const char tab [100] = "oui et toi";
-	char tab2[100] = "Salut ca va";
-
-	ft_memcpy(tab2,tab,4);
-	printf("%s\n",tab2);
-	return (0);
-}
-*/

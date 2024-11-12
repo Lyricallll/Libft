@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 09:33:05 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/12 09:56:26 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:50:20 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	temp->next = new;
 }
-// a tester avec *lst a la place de temp 

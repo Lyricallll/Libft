@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:07 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/08 15:25:32 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:52:21 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,28 +93,3 @@ char	**ft_split(char const *s, char c)
 	split[j] = 0;
 	return (split);
 }
-
-// #include <unistd.h>
-
-// int	main(void)
-// {
-// 	char	*str = "loremreuismodnon,mi.";
-// 	char 	charset = ' ';
-// 	int	i = 0;
-// 	int	k = 0;
-// 	char	**tab;
-// 	tab = ft_split(str,charset);
-// 	while (tab[i] != 0)
-// 	{
-// 		k = 0;
-// 		while (tab[i][k] != '\0')
-// 		{
-// 			write(1,&tab[i][k], 1);
-// 			k++;
-// 		}
-// 		write(1, "\n",1);
-// 		free(tab[i]);
-// 		i++;
-// 	}	
-// 	free(tab);
-// }

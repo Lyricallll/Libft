@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 09:04:14 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/12 10:48:25 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:53:38 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
 	dest[dest_size + i] = '\0';
 	return (src_size + dest_size);
 }
-/*
-int	main()
-{
-	char	dest[20] = "salut";
-	char	src[20] = "ca va ?";
-	printf("RESULT : %zu\n", strlcat(dest, src, 10));
-	printf("OUTPUT NEZ: %u\n", ft_strlcat(dest, src, 10));
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 13:31:58 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 15:52:47 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:53:04 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ char	*ft_strdup(char *src)
 	tab[i] = '\0';
 	return (tab);
 }
-/*
-int main()
-{
-	char	*tab = "4dsad";
-	char *tab2;
-	tab2 = ft_strdup(tab);
-
-}
-*/

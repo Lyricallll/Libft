@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 08:26:43 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 08:09:11 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:51:08 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,3 @@ void	*ft_memchr(const void *ptr, int value, size_t num)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int 	main (void)
-{
-	const char p [100] = "salut les gars 0";
-
-	printf("%s\n",(char *)ft_memchr(p,103,8));
-
-}
-*/

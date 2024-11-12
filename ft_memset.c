@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 12:48:48 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/07 08:10:07 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:51:52 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-/*
-int	main(void)
-{
-	char	s[100] = "allo la terre";
-	int	c = 50;
-
-	ft_memset(s,c,5);
-	printf("%s", s);
-	return (0);
-}
-*/
