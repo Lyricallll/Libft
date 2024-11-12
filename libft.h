@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 08:59:56 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/12 12:15:05 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:18:56 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+unsigned int	ft_strlcpy(char *dest, const char *src, size_t size);
 unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size);
 char			*ft_strnstr(const char *str1, const char *str2, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
@@ -60,7 +60,7 @@ int				ft_isalnum(int c);
 int				ft_isalpha(int c);
 int				ft_strlen(const char *s);
 int				ft_atoi(const char *str);
-int				ft_strncmp(char *s1, char *s2, unsigned int n);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_lstsize(t_list *lst);
 t_list			*ft_lstnew(void *content);
 t_list			*ft_lstlast(t_list *lst);

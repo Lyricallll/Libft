@@ -6,12 +6,13 @@
 #    By: agraille <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 08:03:50 by agraille          #+#    #+#              #
-#    Updated: 2024/11/12 12:08:02 by agraille         ###   ########.fr        #
+#    Updated: 2024/11/12 14:28:02 by agraille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC=gcc
 CFLAGS=-Wall -Wextra -Werror
+HEADER = libft.h
 SRC = ./ft_isalpha.c\
 	./ft_isdigit.c\
 	./ft_isalnum.c\
@@ -62,13 +63,13 @@ NAME = libft.a
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) $(HEADER)
 	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -I . -c $< -o $@
 
-bonus :
+bonus : $(OBJ) $(OBJ_BONUS) $(HEADER)
 	$(MAKE) SRC="$(SRC) $(SRC_BONUS)"
 clean :
 	rm -f $(OBJ) $(OBJ_BONUS)
