@@ -6,11 +6,11 @@
 #    By: agraille <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 08:03:50 by agraille          #+#    #+#              #
-#    Updated: 2024/11/12 14:28:02 by agraille         ###   ########.fr        #
+#    Updated: 2024/11/13 08:44:51 by agraille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC=gcc
+CC=cc
 CFLAGS=-Wall -Wextra -Werror
 HEADER = libft.h
 SRC = ./ft_isalpha.c\
@@ -69,14 +69,18 @@ $(NAME): $(OBJ) $(HEADER)
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -I . -c $< -o $@
 
-bonus : $(OBJ) $(OBJ_BONUS) $(HEADER)
-	$(MAKE) SRC="$(SRC) $(SRC_BONUS)"
-clean :
-	rm -f $(OBJ) $(OBJ_BONUS)
+bonus : $(NAME) .bonus
 
-fclean :
-	rm -f $(NAME) $(OBJ) $(OBJ_BONUS)
+.bonus : $(OBJ_BONUS)
+	ar rcs $(NAME) $(OBJ)
+	touch .bonus
+
+clean :
+	rm -f $(OBJ) $(OBJ_BONUS) .bonus
+
+fclean : clean
+	rm -f $(NAME)
 
 re : fclean all
 
-.PHONY : re fclean clean
+.PHONY : all re fclean clean bonus
