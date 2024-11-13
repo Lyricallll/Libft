@@ -6,14 +6,16 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 23:10:53 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/09 23:15:12 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/13 09:41:08 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s || !fd)
+		return ;
 	while (*s)
 		write(fd, s++, 1);
 }

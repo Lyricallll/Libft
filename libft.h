@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 08:59:56 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/12 14:55:10 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/13 09:24:14 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int				ft_toupper(int c);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
 int				ft_strlen(const char *s);
-int				ft_atoi(const char *str);
+int				ft_atoi(const char *nptr);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_lstsize(t_list *lst);
 t_list			*ft_lstnew(void *content);

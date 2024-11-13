@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 10:12:06 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/12 10:49:17 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/13 09:30:58 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*current;
 	t_list	*next;
 
+	if (!del)
+		return ;
 	current = *lst;
 	while (current != NULL)
 	{

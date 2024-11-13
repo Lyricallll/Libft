@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 23:10:01 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/09 23:10:36 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/13 09:38:35 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s || !fd)
+		return ;
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }

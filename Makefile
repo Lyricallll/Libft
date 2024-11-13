@@ -6,7 +6,7 @@
 #    By: agraille <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 08:03:50 by agraille          #+#    #+#              #
-#    Updated: 2024/11/13 08:44:51 by agraille         ###   ########.fr        #
+#    Updated: 2024/11/13 08:47:36 by agraille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,7 @@ $(NAME): $(OBJ) $(HEADER)
 bonus : $(NAME) .bonus
 
 .bonus : $(OBJ_BONUS)
-	ar rcs $(NAME) $(OBJ)
+	ar rcs $(NAME) $(OBJ_BONUS)
 	touch .bonus
 
 clean :
