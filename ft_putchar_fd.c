@@ -6,7 +6,7 @@
 /*   By: agraille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 22:49:10 by agraille          #+#    #+#             */
-/*   Updated: 2024/11/13 09:54:00 by agraille         ###   ########.fr       */
+/*   Updated: 2024/11/15 08:30:52 by agraille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (!fd)
-		return ;
 	write(fd, &c, 1);
 }
