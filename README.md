@@ -1,0 +1,1 @@
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHJoODN0MzJ4M3UzeTl1YzdvNDk2emR3OXZxY24wb3h3anpwZWY5aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fsXOS3oBboiYf6fSsY/giphy.gif" alt="Texte alternatif" width="800" height="400" />
